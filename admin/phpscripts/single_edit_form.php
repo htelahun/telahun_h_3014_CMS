@@ -5,10 +5,11 @@
       $result = getSingle($tbl,$col,$id);
       $getResult = mysqli_fetch_array($result);
       //echo mysqli_num_fields($result);
-echo "<form  action=\"phpscripts/editall.php\" method=\"post\">";
-echo "<input hidden name=\"tbl\" value=\"{$tbl}\">";
-echo "<input hidden name=\"col\" value=\"{$col}\">";
-echo "<input hidden name=\"id\" value=\"{$id}\">";
+      
+      echo "<form  action=\"phpscripts/editall.php\" method=\"post\">";
+      echo "<input hidden name=\"tbl\" value=\"{$tbl}\">";
+      echo "<input hidden name=\"col\" value=\"{$col}\">";
+      echo "<input hidden name=\"id\" value=\"{$id}\">";
 
       for( $i=0; $i<mysqli_num_fields($result); $i++ ){
           $datatype = mysqli_fetch_field_direct($result, $i);
