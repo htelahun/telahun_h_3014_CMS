@@ -1,22 +1,14 @@
 (function() {
 
   var btn = document.querySelector(".btn-e");
-  var loginBox = document.querySelector(".login-box");
+  var hide = document.querySelector(".hide");
 
   function newpage() {
-  // loginBox.style.visibility = "hidden";
-  console.log("done");
+  //console.log("done");
+  // hide.style.display="none";
+
   }
 
-
 btn.addEventListener('click',newpage,false);
-
-
-
-
-
-
-
-
 
 })();

@@ -15,12 +15,9 @@ $id = $_GET['id'];
 
 $edit = single_edit($tbl, $col, $id);
 
-redirect_to("admin_editSingle.php");
-echo single_edit($tbl, $col, $id);
-
 }
 
- ?>
+?>
 
 
 <!DOCTYPE html>
@@ -41,12 +38,14 @@ echo single_edit($tbl, $col, $id);
         <h1 class="header">EDIT MOVIES</h1>
     </header>
 
-    <ul class="position">
+    <ul class="position hide">
       <li class="movies">
         <?php
         while($row = mysqli_fetch_array($movie)){
           //    <a href=\"admin_editSingle.php?id={$row['movies_id']}\">EDIT</a>
-          echo "<p class=\"movie-t\">{$row['movies_title']}</p>
+          echo "
+          <p class=\"movie-t\">{$row['movies_title']}</p>
+
           <a href=\"admin_editSingle.php?id={$row['movies_id']}\">
 
           <button class=\"btn-e\" type=\"submit\" name=\"submit\">EDIT</button>

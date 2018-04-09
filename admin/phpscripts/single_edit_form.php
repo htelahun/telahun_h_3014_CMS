@@ -21,7 +21,7 @@ echo "<input hidden name=\"id\" value=\"{$id}\">";
 
           //use ajax to remove the movies_ from the column names that appear in browser
           if ($fieldname != $col) {
-            echo "<label class=\"left\">{$fieldname}</label><br>";
+            echo "<label>{$fieldname}</label><br>";
               //252 is text, 253 is input
             if ($fieldtype != "252") {
               echo "<input type=\"text\" name=\"{$fieldname}\" value=\"{$getResult[$i]}\"><br><br>";
