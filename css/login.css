@@ -15,7 +15,8 @@ h1{
  }
 
 .left input[type=text]{
-padding-left: 300px;
+  width: 300px;
+  height: 40px;
 }
 
  .loginimg{

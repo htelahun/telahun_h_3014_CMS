@@ -20,31 +20,7 @@ if(isset($_GET['id'])){
     <title>Edit Movie</title>
   </head>
   <body>
-    <header>
-      <ul>
-      <li >
-        <a class="loginimg" href="admin_index.php"> <img src="../images/back.png" alt="">
-        </a>
-      </li>
-      </ul>
-        <h1 class="header">EDIT MOVIES</h1>
-    </header>
-
-    <section>
-    <?php
-
-    if(!is_string($edit)){
-    		$row = mysqli_fetch_array($edit);
-    		echo "<form>
-          <h2>{$row['movies_title']}</h2>
-
-        </form>";
-      } else{
-    			echo "<p class=\"error\"> {$edit}</p>";
-    		}
-
-     ?>
-     </section>
+  
 
   </body>
 </html>
