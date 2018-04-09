@@ -38,7 +38,7 @@ $edit = single_edit($tbl, $col, $id);
         <h1 class="header">EDIT MOVIES</h1>
     </header>
 
-    <ul class="position hide">
+    <ul class="position ">
       <li class="movies">
         <?php
         while($row = mysqli_fetch_array($movie)){
@@ -56,7 +56,6 @@ $edit = single_edit($tbl, $col, $id);
         ?>
       </li>
     </ul>
-<script src="../js/newpage.js">
 
 </script>
   </body>

@@ -29,7 +29,7 @@ require_once('phpscripts/config.php');
     <section class="login-box">
     <div class="center-2">
         <?php
-        echo "<h1> Good morning {$_SESSION['user_name']}!</h1>";
+        echo "<h1> Hello {$_SESSION['user_name']}!</h1>";
         ?>
     </div>
 
